@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Skills Deck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form method="POST" action="https://hooks.zapier.com/hooks/catch/9631616/on9v0ix/" id="skills_deck">
+  <fieldset id="enter_details">
+    <h1>Skills Deck</h1>
+    <label for="name">Player name</label>
+    <input type="text" name="name" id="name" />
+    <label for="email">Email address</label>
+    <input type="email" name="email" id="email" />
+    <label for="occupation">Occupation</label>
+    <input type="text" name="occupation" id="occupation" />
+    <input type="hidden" name="group" id="group" />
+    <button type="button">Play →</button>
+  </fieldset>
+
+  <fieldset id="select_social">
+    <legend>Select the top three social enterprises you're interested in</legend>
+
+    <input id="social_1" type="checkbox" name="top_social1" value="Education and Training"><label for="social_1">Education and Training</label>
+
+    <input id="social_2" type="checkbox" name="top_social2" value="Environmental"><label for="social_2">Environmental</label>
+
+    <input id="social_3" type="checkbox" name="top_social3" value="Technology"><label for="social_3">Technology</label>
+
+    <input id="social_4" type="checkbox" name="top_social4" value="Health and Social Care"><label for="social_4">Health and Social Care</label>
+
+    <input id="social_5" type="checkbox" name="top_social5" value="Youth Empowerment"><label for="social_5">Youth Empowerment</label>
+
+    <input id="social_6" type="checkbox" name="top_social6" value="Food & Hospitality"><label for="social_6">Food & Hospitality</label>
+
+    <input id="social_7" type="checkbox" name="top_social7" value="Justice and Advocacy"><label for="social_7">Justice & Advocacy</label>
+
+    <input id="social_8" type="checkbox" name="top_social8" value="Finance & Social Impact"><label for="social_8">Finance & Social Impact</label>
+
+    <input id="social_9" type="checkbox" name="top_social9" value="Housing & Hospitality"><label for="social_9">Housing & Hospitality</label>
+
+    <span id="one" class="progress">1</span>
+    <span id="two" class="progress">2</span>
+    <span id="three" class="progress">3</span>
+
+    <button type="button">Next →</button>
+  </fieldset>
+
+  <fieldset id="rank_social">
+    <legend>Rank you social enterprising by selecting them</legend>
+
+    <p id="rank_selection_1">#1</p>
+    <input id="rank_1" type="radio" name="rank_social_1" value="Education & Training">
+    <label for="rank_1">Education & Training</label>
+
+    <input id="rank_2" type="radio" name="rank_social_1" value="Environmental">
+    <label for="rank_2">Environmental</label>
+
+    <input id="rank_3" type="radio" name="rank_social_1" value="Technology">
+    <label for="rank_3">Technology</label>
+
+    <p id="rank_selection_2">#2</p>
+    <input class="set2" id="rank_4" type="radio" name="rank_social_2" value="Education_and_Training">
+    <label class="set2" for="rank_4">Education & Training</label>
+
+    <input class="set2" id="rank_5" type="radio" name="rank_social_2" value="Environmental">
+    <label class="set2" for="rank_5">Environmental</label>
+
+    <input class="set2" id="rank_6" type="radio" name="rank_social_2" value="Technology">
+    <label class="set2" for="rank_6">Technology</label>
+
+    <p id="rank_selection_3">#3</p>
+    <input class="set3" id="rank_7" type="radio" name="rank_social_3" value="Education & Training">
+    <label class="set3" for="rank_7">Education & Training</label>
+
+    <input class="set3" id="rank_8" type="radio" name="rank_social_3" value="Environmental">
+    <label class="set3" for="rank_8">Environmental</label>
+
+    <input class="set3" id="rank_9" type="radio" name="rank_social_3" value="Technology">
+    <label class="set3" for="rank_9">Technology</label>
+
+    <button type="button">Next →</button>
+
+  </fieldset>
+
+  <fieldset id="activity_select">
+    <legend>Click or use the arrow keys to indicate which activities you like to do</legend>
+
+    <h3><span>Pick</span> <em>yes</em> <em>no</em> <span>or</span> <em>maybe</em></h3>
+
+    <p for="activity_1">Create social media strategy<span>Social Media</span></p>
+    <input id="pick_1" type="radio" name="activity_1" value="yes" />
+    <label for="pick_1">Yes</label>
+    <input id="pick_2" type="radio" name="activity_1" value="maybe" />
+    <label for="pick_2">Maybes</label>
+    <input id="pick_3" type="radio" name="activity_1" value="no" />
+    <label for="pick_3">No</label>
+
+    <p for="activity_2">Write blog posts or articles<span>Social Media</span></p>
+    <input id="pick_4" type="radio" name="activity_2" value="yes" />
+    <label for="pick_4">Yes</label>
+    <input id="pick_5" type="radio" name="activity_2" value="maybe" />
+    <label for="pick_5">Maybes</label>
+    <input id="pick_6" type="radio" name="activity_2" value="no" />
+    <label for="pick_6">No</label>
+
+    <p for="activity_3">Create & manage email lists<span>Social Media</span></p>
+    <input id="pick_7" type="radio" name="activity_3" value="yes" />
+    <label for="pick_7">Yes</label>
+    <input id="pick_8" type="radio" name="activity_3" value="maybe" />
+    <label for="pick_8">Maybes</label>
+    <input id="pick_9" type="radio" name="activity_3" value="no" />
+    <label for="pick_9">No</label>
+
+    <p for="activity_4">Contribute on Twitter<span>Social Media</span></p>
+    <input id="pick_10" type="radio" name="activity_4" value="yes" />
+    <label for="pick_10">Yes</label>
+    <input id="pick_11" type="radio" name="activity_4" value="maybe" />
+    <label for="pick_11">Maybes</label>
+    <input id="pick_12" type="radio" name="activity_4" value="no" />
+    <label for="pick_12">No</label>
+
+    <p for="activity_5">Contribute on Instagram<span>Social Media</span></p>
+    <input id="pick_13" type="radio" name="activity_5" value="yes" />
+    <label for="pick_13">Yes</label>
+    <input id="pick_14" type="radio" name="activity_5" value="maybe" />
+    <label for="pick_14">Maybes</label>
+    <input id="pick_15" type="radio" name="activity_5" value="no" />
+    <label for="pick_15">No</label>
+
+    <p for="activity_6">Contribute on Facebook <span>Social Media</span></p>
+    <input id="pick_16" type="radio" name="activity_6" value="yes" />
+    <label for="pick_16">Yes</label>
+    <input id="pick_17" type="radio" name="activity_6" value="maybe" />
+    <label for="pick_17">Maybes</label>
+    <input id="pick_18" type="radio" name="activity_6" value="no" />
+    <label for="pick_18">No</label>
+
+    <p for="activity_7">Lead or manage a social media group<span>Social Media</span></p>
+    <input id="pick_19" type="radio" name="activity_7" value="yes" />
+    <label for="pick_19">Yes</label>
+    <input id="pick_20" type="radio" name="activity_7" value="maybe" />
+    <label for="pick_20">Maybes</label>
+    <input id="pick_21" type="radio" name="activity_7" value="no" />
+    <label for="pick_21">No</label>
+
+    <p for="activity_8">Engage with thought leaders and influencers<span>Social Media</span></p>
+    <input id="pick_22" type="radio" name="activity_8" value="yes" />
+    <label for="pick_22">Yes</label>
+    <input id="pick_23" type="radio" name="activity_8" value="maybe" />
+    <label for="pick_23">Maybes</label>
+    <input id="pick_24" type="radio" name="activity_8" value="no" />
+    <label for="pick_24">No</label>
+
+    <p for="activity_9">Engage with marketing partners<span>Social Media</span></p>
+    <input id="pick_25" type="radio" name="activity_9" value="yes" />
+    <label for="pick_25">Yes</label>
+    <input id="pick_26" type="radio" name="activity_9" value="maybe" />
+    <label for="pick_26">Maybes</label>
+    <input id="pick_27" type="radio" name="activity_9" value="no" />
+    <label for="pick_27">No</label>
+
+    <p for="activity_10">Update calendar with events<span>Social Media</span></p>
+    <input id="pick_28" type="radio" name="activity_10" value="yes" />
+    <label for="pick_28">Yes</label>
+    <input id="pick_29" type="radio" name="activity_10" value="maybe" />
+    <label for="pick_29">Maybe</label>
+    <input id="pick_30" type="radio" name="activity_10" value="no" />
+    <label for="pick_30">No</label>
+
+    <p for="activity_11">Run socia media data<span>Social Media</span></p>
+    <input id="pick_31" type="radio" name="activity_11" value="yes" />
+    <label for="pick_31">Yes</label>
+    <input id="pick_32" type="radio" name="activity_11" value="maybe" />
+    <label for="pick_32">Maybe</label>
+    <input id="pick_33" type="radio" name="activity_11" value="no" />
+    <label for="pick_33">No</label>
+
+    <p for="activity_12">Maximize social reach through sharing with advocacy<span>Social Media</span></p>
+    <input id="pick_34" type="radio" name="activity_12" value="yes" />
+    <label for="pick_34">Yes</label>
+    <input id="pick_35" type="radio" name="activity_12" value="maybe" />
+    <label for="pick_35">Maybe</label>
+    <input id="pick_36" type="radio" name="activity_12" value="no" />
+    <label for="pick_36">No</label>
+
+    <p for="activity_13">Attend a Twitter chat<span>Social Media</span></p>
+    <input id="pick_37" type="radio" name="activity_13" value="yes" />
+    <label for="pick_37">Yes</label>
+    <input id="pick_38" type="radio" name="activity_13" value="maybe" />
+    <label for="pick_38">Maybe</label>
+    <input id="pick_39" type="radio" name="activity_13" value="no" />
+    <label for="pick_39">No</label>
+
+    <p for="activity_14">Create videos <span>Social Media</span></p>
+    <input id="pick_40" type="radio" name="activity_14" value="yes" />
+    <label for="pick_40">Yes</label>
+    <input id="pick_41" type="radio" name="activity_14" value="maybe" />
+    <label for="pick_41">Maybe</label>
+    <input id="pick_42" type="radio" name="activity_14" value="no" />
+    <label for="pick_42">No</label>
+
+    <p for="activity_15">Take photos <span>Social Media</span></p>
+    <input id="pick_43" type="radio" name="activity_15" value="yes" />
+    <label for="pick_43">Yes</label>
+    <input id="pick_44" type="radio" name="activity_15" value="maybe" />
+    <label for="pick_44">Maybe</label>
+    <input id="pick_45" type="radio" name="activity_15" value="no" />
+    <label for="pick_45">No</label>
+
+    <p for="activity_16">Activity and resource planning<span>Project Management</span></p>
+    <input id="pick_46" type="radio" name="activity_16" value="yes" />
+    <label for="pick_46">Yes</label>
+    <input id="pick_47" type="radio" name="activity_16" value="maybe" />
+    <label for="pick_47">Maybe</label>
+    <input id="pick_48" type="radio" name="activity_16" value="no" />
+    <label for="pick_48">No</label>
+
+    <p for="activity_17">Organize and motivate a project team<span>Project Management</span></p>
+    <input id="pick_49" type="radio" name="activity_17" value="yes" />
+    <label for="pick_49">Yes</label>
+    <input id="pick_50" type="radio" name="activity_17" value="maybe" />
+    <label for="pick_50">Maybe</label>
+    <input id="pick_51" type="radio" name="activity_17" value="no" />
+    <label for="pick_51">No</label>
+
+    <p for="activity_18">Manage a project with timelines and deliverable <span>Project Management</span></p>
+    <input id="pick_52" type="radio" name="activity_18" value="yes" />
+    <label for="pick_52">Yes</label>
+    <input id="pick_53" type="radio" name="activity_18" value="maybe" />
+    <label for="pick_53">Maybe</label>
+    <input id="pick_54" type="radio" name="activity_18" value="no" />
+    <label for="pick_54">No</label>
+
+    <p for="activity_19">Ensure customer satisfaction<span>Project Management</span></p>
+    <input id="pick_55" type="radio" name="activity_19" value="yes" />
+    <label for="pick_55">Yes</label>
+    <input id="pick_56" type="radio" name="activity_19" value="maybe" />
+    <label for="pick_56">Maybe</label>
+    <input id="pick_57" type="radio" name="activity_19" value="no" />
+    <label for="pick_57">No</label>
+
+    <p for="activity_20">Analyze and manage project risk<span>Project Management</span></p>
+    <input id="pick_58" type="radio" name="activity_20" value="yes" />
+    <label for="pick_58">Yes</label>
+    <input id="pick_59" type="radio" name="activity_20" value="maybe" />
+    <label for="pick_59">Maybe</label>
+    <input id="pick_60" type="radio" name="activity_20" value="no" />
+    <label for="pick_60">No</label>
+
+    <p for="activity_21">Control risk and minimzing uncertainity<span>Project Management</span></p>
+    <input id="pick_61" type="radio" name="activity_21" value="yes" />
+    <label for="pick_61">Yes</label>
+    <input id="pick_62" type="radio" name="activity_21" value="maybe" />
+    <label for="pick_62">Maybe</label>
+    <input id="pick_63" type="radio" name="activity_21" value="no" />
+    <label for="pick_63">No</label>
+
+    <p for="activity_22">Resolve conflict<span>Project Management</span></p>
+    <input id="pick_64" type="radio" name="activity_22" value="yes" />
+    <label for="pick_64">Yes</label>
+    <input id="pick_65" type="radio" name="activity_22" value="maybe" />
+    <label for="pick_65">Maybe</label>
+    <input id="pick_66" type="radio" name="activity_22" value="no" />
+    <label for="pick_66">No</label>
+
+    <p for="activity_23">Monitor progress<span>Project Management</span></p>
+    <input id="pick_67" type="radio" name="activity_23" value="yes" />
+    <label for="pick_67">Yes</label>
+    <input id="pick_68" type="radio" name="activity_23" value="maybe" />
+    <label for="pick_68">Maybe</label>
+    <input id="pick_69" type="radio" name="activity_23" value="no" />
+    <label for="pick_69">No</label>
+
+    <p for="activity_24">Create progress reports for stakeholders<span>Project Management</span></p>
+    <input id="pick_70" type="radio" name="activity_24" value="yes" />
+    <label for="pick_70">Yes</label>
+    <input id="pick_71" type="radio" name="activity_24" value="maybe" />
+    <label for="pick_71">Maybe</label>
+    <input id="pick_72" type="radio" name="activity_24" value="no" />
+    <label for="pick_72">No</label>
+
+    <p for="activity_25">Problem solve specific issues <span>Project Management</span></p>
+    <input id="pick_73" type="radio" name="activity_25" value="yes" />
+    <label for="pick_73">Yes</label>
+    <input id="pick_74" type="radio" name="activity_25" value="maybe" />
+    <label for="pick_74">Maybe</label>
+    <input id="pick_75" type="radio" name="activity_25" value="no" />
+    <label for="pick_75">No</label>
+
+    <p for="activity_26">Create meeting agendas<span>Project Management</span></p>
+    <input id="pick_76" type="radio" name="activity_26" value="yes" />
+    <label for="pick_76">Yes</label>
+    <input id="pick_77" type="radio" name="activity_26" value="maybe" />
+    <label for="pick_77">Maybe</label>
+    <input id="pick_78" type="radio" name="activity_26" value="no" />
+    <label for="pick_78">No</label>
+
+    <p for="activity_27">Set up website analytics<span>Web Tech</span></p>
+    <input id="pick_79" type="radio" name="activity_27" value="yes" />
+    <label for="pick_79">Yes</label>
+    <input id="pick_80" type="radio" name="activity_27" value="maybe" />
+    <label for="pick_80">Maybe</label>
+    <input id="pick_81" type="radio" name="activity_27" value="no" />
+    <label for="pick_81">No</label>
+
+    <p for="activity_28">Website, blog, and social platform optimization <span>Web Tech</span></p>
+    <input id="pick_82" type="radio" name="activity_28" value="yes" />
+    <label for="pick_82">Yes</label>
+    <input id="pick_83" type="radio" name="activity_28" value="maybe" />
+    <label for="pick_83">Maybe</label>
+    <input id="pick_84" type="radio" name="activity_28" value="no" />
+    <label for="pick_84">No</label>
+
+    <p for="activity_29">Computer/technical trouble-shooting<span>Web Tech</span></p>
+    <input id="pick_85" type="radio" name="activity_29" value="yes" />
+    <label for="pick_85">Yes</label>
+    <input id="pick_86" type="radio" name="activity_29" value="maybe" />
+    <label for="pick_86">Maybe</label>
+    <input id="pick_87" type="radio" name="activity_29" value="no" />
+    <label for="pick_87">No</label>
+
+    <p for="activity_30">Installation or set up of technical devices<span>Web Tech</span></p>
+    <input id="pick_88" type="radio" name="activity_30" value="yes" />
+    <label for="pick_88">Yes</label>
+    <input id="pick_89" type="radio" name="activity_30" value="maybe" />
+    <label for="pick_89">Maybe</label>
+    <input id="pick_90" type="radio" name="activity_30" value="no" />
+    <label for="pick_90">No</label>
+
+    <p for="activity_31">Update data on a website<span>Web Tech</span></p>
+    <input id="pick_91" type="radio" name="activity_31" value="yes" />
+    <label for="pick_91">Yes</label>
+    <input id="pick_92" type="radio" name="activity_31" value="maybe" />
+    <label for="pick_92">Maybe</label>
+    <input id="pick_93" type="radio" name="activity_31" value="no" />
+    <label for="pick_93">No</label>
+
+    <p for="activity_32">Website development <span>Web Tech</span></p>
+    <input id="pick_94" type="radio" name="activity_32" value="yes" />
+    <label for="pick_94">Yes</label>
+    <input id="pick_95" type="radio" name="activity_32" value="maybe" />
+    <label for="pick_95">Maybe</label>
+    <input id="pick_96" type="radio" name="activity_32" value="no" />
+    <label for="pick_96">No</label>
+
+    <p for="activity_33">Digital marketing <span>Web Tech</span></p>
+    <input id="pick_97" type="radio" name="activity_33" value="yes" />
+    <label for="pick_97">Yes</label>
+    <input id="pick_98" type="radio" name="activity_33" value="maybe" />
+    <label for="pick_98">Maybe</label>
+    <input id="pick_99" type="radio" name="activity_33" value="no" />
+    <label for="pick_99">No</label>
+
+    <p for="activity_34">Serve as tech host for meetings <span>Web Tech</span></p>
+    <input id="pick_100" type="radio" name="activity_34" value="yes" />
+    <label for="pick_100">Yes</label>
+    <input id="pick_101" type="radio" name="activity_34" value="maybe" />
+    <label for="pick_101">Maybe</label>
+    <input id="pick_102" type="radio" name="activity_34" value="no" />
+    <label for="pick_102">No</label>
+
+    <p for="activity_35">Assemble booklets of paper<span>Administration</span></p>
+    <input id="pick_103" type="radio" name="activity_35" value="yes" />
+    <label for="pick_103">Yes</label>
+    <input id="pick_104" type="radio" name="activity_35" value="maybe" />
+    <label for="pick_104">Maybe</label>
+    <input id="pick_105" type="radio" name="activity_35" value="no" />
+    <label for="pick_105">No</label>
+
+    <p for="activity_36">Complete an insurance audit<span>Administration</span></p>
+    <input id="pick_106" type="radio" name="activity_36" value="yes" />
+    <label for="pick_106">Yes</label>
+    <input id="pick_107" type="radio" name="activity_36" value="maybe" />
+    <label for="pick_107">Maybe</label>
+    <input id="pick_108" type="radio" name="activity_36" value="no" />
+    <label for="pick_108">No</label>
+
+    <p for="activity_37">Address and mail letters<span>Administration</span></p>
+    <input id="pick_109" type="radio" name="activity_37" value="yes" />
+    <label for="pick_109">Yes</label>
+    <input id="pick_110" type="radio" name="activity_37" value="maybe" />
+    <label for="pick_110">Maybe</label>
+    <input id="pick_111" type="radio" name="activity_37" value="no" />
+    <label for="pick_111">No</label>
+
+    <p for="activity_38">Order supplies<span>Administration</span></p>
+    <input id="pick_112" type="radio" name="activity_38" value="yes" />
+    <label for="pick_112">Yes</label>
+    <input id="pick_113" type="radio" name="activity_38" value="maybe" />
+    <label for="pick_113">Maybe</label>
+    <input id="pick_114" type="radio" name="activity_38" value="no" />
+    <label for="pick_114">No</label>
+
+    <p for="activity_39">Take inventory<span>Administration</span></p>
+    <input id="pick_115" type="radio" name="activity_39" value="yes" />
+    <label for="pick_115">Yes</label>
+    <input id="pick_116" type="radio" name="activity_39" value="maybe" />
+    <label for="pick_116">Maybe</label>
+    <input id="pick_117" type="radio" name="activity_39" value="no" />
+    <label for="pick_117">No</label>
+
+    <p for="activity_40">Create and edit spreadsheets<span>Administration</span></p>
+    <input id="pick_118" type="radio" name="activity_40" value="yes" />
+    <label for="pick_118">Yes</label>
+    <input id="pick_119" type="radio" name="activity_40" value="maybe" />
+    <label for="pick_119">Maybe</label>
+    <input id="pick_120" type="radio" name="activity_40" value="no" />
+    <label for="pick_120">No</label>
+
+    <p for="activity_41">Data entry<span>Administration</span></p>
+    <input id="pick_121" type="radio" name="activity_41" value="yes" />
+    <label for="pick_121">Yes</label>
+    <input id="pick_122" type="radio" name="activity_41" value="maybe" />
+    <label for="pick_122">Maybe</label>
+    <input id="pick_123" type="radio" name="activity_41" value="no" />
+    <label for="pick_123">No</label>
+
+    <p for="activity_42">Organize information and data<span>Administration</span></p>
+    <input id="pick_124" type="radio" name="activity_42" value="yes" />
+    <label for="pick_124">Yes</label>
+    <input id="pick_125" type="radio" name="activity_42" value="maybe" />
+    <label for="pick_125">Maybe</label>
+    <input id="pick_126" type="radio" name="activity_42" value="no" />
+    <label for="pick_126">No</label>
+
+    <p for="activity_43">Compile data for documents or reports<span>Administration</span></p>
+    <input id="pick_127" type="radio" name="activity_43" value="yes" />
+    <label for="pick_127">Yes</label>
+    <input id="pick_128" type="radio" name="activity_43" value="maybe" />
+    <label for="pick_128">Maybe</label>
+    <input id="pick_129" type="radio" name="activity_43" value="no" />
+    <label for="pick_129">No</label>
+
+    <p for="activity_44">Filing<span>Administration</span></p>
+    <input id="pick_130" type="radio" name="activity_44" value="yes" />
+    <label for="pick_130">Yes</label>
+    <input id="pick_131" type="radio" name="activity_44" value="maybe" />
+    <label for="pick_131">Maybe</label>
+    <input id="pick_132" type="radio" name="activity_44" value="no" />
+    <label for="pick_132">No</label>
+
+    <p for="activity_45">Pro bono grant writing consultation<span>Research & Grant Writing</span></p>
+    <input id="pick_133" type="radio" name="activity_45" value="yes" />
+    <label for="pick_133">Yes</label>
+    <input id="pick_134" type="radio" name="activity_45" value="maybe" />
+    <label for="pick_134">Maybe</label>
+    <input id="pick_135" type="radio" name="activity_45" value="no" />
+    <label for="pick_135">No</label>
+
+    <p for="activity_46">Read articles for data to assist an organization<span>Research & Grant Writing</span></p>
+    <input id="pick_136" type="radio" name="activity_46" value="yes" />
+    <label for="pick_136">Yes</label>
+    <input id="pick_137" type="radio" name="activity_46" value="maybe" />
+    <label for="pick_137">Maybe</label>
+    <input id="pick_138" type="radio" name="activity_46" value="no" />
+    <label for="pick_138">No</label>
+
+    <p for="activity_47">Conduct research for grants<span>Research & Grant Writing</span></p>
+    <input id="pick_139" type="radio" name="activity_47" value="yes" />
+    <label for="pick_139">Yes</label>
+    <input id="pick_140" type="radio" name="activity_47" value="maybe" />
+    <label for="pick_140">Maybe</label>
+    <input id="pick_141" type="radio" name="activity_47" value="no" />
+    <label for="pick_141">No</label>
+
+    <p for="activity_48">Research policies and forms<span>Research & Grant Writing</span></p>
+    <input id="pick_142" type="radio" name="activity_48" value="yes" />
+    <label for="pick_142">Yes</label>
+    <input id="pick_143" type="radio" name="activity_48" value="maybe" />
+    <label for="pick_143">Maybe</label>
+    <input id="pick_144" type="radio" name="activity_48" value="no" />
+    <label for="pick_144">No</label>
+
+    <p for="activity_49">Complete grant applications<span>Research & Grant Writing</span></p>
+    <input id="pick_145" type="radio" name="activity_49" value="yes" />
+    <label for="pick_145">Yes</label>
+    <input id="pick_146" type="radio" name="activity_49" value="maybe" />
+    <label for="pick_146">Maybe</label>
+    <input id="pick_147" type="radio" name="activity_49" value="no" />
+    <label for="pick_147">No</label>
+
+    <p for="activity_50">Research grants<span>Research & Grant Writing</span></p>
+    <input id="pick_148" type="radio" name="activity_50" value="yes" />
+    <label for="pick_148">Yes</label>
+    <input id="pick_149" type="radio" name="activity_50" value="maybe" />
+    <label for="pick_149">Maybe</label>
+    <input id="pick_150" type="radio" name="activity_50" value="no" />
+    <label for="pick_150">No</label>
+
+    <p for="activity_51">Write a letter of Inquiry <span>Research & Grant Writing</span></p>
+    <input id="pick_151" type="radio" name="activity_51" value="yes" />
+    <label for="pick_151">Yes</label>
+    <input id="pick_152" type="radio" name="activity_51" value="maybe" />
+    <label for="pick_152">Maybe</label>
+    <input id="pick_153" type="radio" name="activity_51" value="no" />
+    <label for="pick_153">No</label>
+
+    <p for="activity_52">Conduct research (evaluate) programs <span>Research & Grant Writing</span></p>
+    <input id="pick_154" type="radio" name="activity_52" value="yes" />
+    <label for="pick_154">Yes</label>
+    <input id="pick_155" type="radio" name="activity_52" value="maybe" />
+    <label for="pick_155">Maybe</label>
+    <input id="pick_156" type="radio" name="activity_52" value="no" />
+    <label for="pick_156">No</label>
+
+    <p for="activity_53">Pro bono finance/accounting consultation<span>Financial Management</span></p>
+    <input id="pick_157" type="radio" name="activity_53" value="yes" />
+    <label for="pick_157">Yes</label>
+    <input id="pick_158" type="radio" name="activity_53" value="maybe" />
+    <label for="pick_158">Maybe</label>
+    <input id="pick_159" type="radio" name="activity_53" value="no" />
+    <label for="pick_159">No</label>
+
+    <p for="activity_54">Auditing<span>Financial Management</span></p>
+    <input id="pick_160" type="radio" name="activity_54" value="yes" />
+    <label for="pick_160">Yes</label>
+    <input id="pick_161" type="radio" name="activity_54" value="maybe" />
+    <label for="pick_161">Maybe</label>
+    <input id="pick_162" type="radio" name="activity_54" value="no" />
+    <label for="pick_162">No</label>
+
+    <p for="activity_55">Accounting<span>Financial Management</span></p>
+    <input id="pick_163" type="radio" name="activity_55" value="yes" />
+    <label for="pick_163">Yes</label>
+    <input id="pick_164" type="radio" name="activity_55" value="maybe" />
+    <label for="pick_164">Maybe</label>
+    <input id="pick_165" type="radio" name="activity_55" value="no" />
+    <label for="pick_165">No</label>
+
+    <p for="activity_56">Bookkeeping<span>Financial Management</span></p>
+    <input id="pick_166" type="radio" name="activity_56" value="yes" />
+    <label for="pick_166">Yes</label>
+    <input id="pick_167" type="radio" name="activity_56" value="maybe" />
+    <label for="pick_167">Maybe</label>
+    <input id="pick_168" type="radio" name="activity_56" value="no" />
+    <label for="pick_168">No</label>
+
+    <p for="activity_57">Research the const of items<span>Financial Management</span></p>
+    <input id="pick_169" type="radio" name="activity_57" value="yes" />
+    <label for="pick_169">Yes</label>
+    <input id="pick_170" type="radio" name="activity_57" value="maybe" />
+    <label for="pick_170">Maybe</label>
+    <input id="pick_171" type="radio" name="activity_57" value="no" />
+    <label for="pick_171">No</label>
+
+    <p for="activity_58">Create a project budget<span>Financial Management</span></p>
+    <input id="pick_172" type="radio" name="activity_58" value="yes" />
+    <label for="pick_172">Yes</label>
+    <input id="pick_173" type="radio" name="activity_58" value="maybe" />
+    <label for="pick_173">Maybe</label>
+    <input id="pick_174" type="radio" name="activity_58" value="no" />
+    <label for="pick_174">No</label>
+
+    <p for="activity_59">Calculate numbers in a spreadsheet<span>Financial Management</span></p>
+    <input id="pick_175" type="radio" name="activity_59" value="yes" />
+    <label for="pick_175">Yes</label>
+    <input id="pick_176" type="radio" name="activity_59" value="maybe" />
+    <label for="pick_176">Maybe</label>
+    <input id="pick_177" type="radio" name="activity_59" value="no" />
+    <label for="pick_177">No</label>
+
+    <p for="activity_60">Tax preparation <span>Financial Management</span></p>
+    <input id="pick_178" type="radio" name="activity_60" value="yes" />
+    <label for="pick_178">Yes</label>
+    <input id="pick_179" type="radio" name="activity_60" value="maybe" />
+    <label for="pick_179">Maybe</label>
+    <input id="pick_180" type="radio" name="activity_60" value="no" />
+    <label for="pick_180">No</label>
+
+    <p for="activity_61">Create a fundraising plan <span>Financial Management</span></p>
+    <input id="pick_181" type="radio" name="activity_61" value="yes" />
+    <label for="pick_181">Yes</label>
+    <input id="pick_182" type="radio" name="activity_61" value="maybe" />
+    <label for="pick_182">Maybe</label>
+    <input id="pick_183" type="radio" name="activity_61" value="no" />
+    <label for="pick_183">No</label>
+
+    <p for="activity_62">Cost estimate and developing a budget <span>Financial Management</span></p>
+    <input id="pick_184" type="radio" name="activity_62" value="yes" />
+    <label for="pick_184">Yes</label>
+    <input id="pick_185" type="radio" name="activity_62" value="maybe" />
+    <label for="pick_185">Maybe</label>
+    <input id="pick_186" type="radio" name="activity_62" value="no" />
+    <label for="pick_186">No</label>
+
+    <p for="activity_63">Represent an organization at a networking event <span>Events</span></p>
+    <input id="pick_187" type="radio" name="activity_63" value="yes" />
+    <label for="pick_187">Yes</label>
+    <input id="pick_188" type="radio" name="activity_63" value="maybe" />
+    <label for="pick_188">Maybe</label>
+    <input id="pick_189" type="radio" name="activity_63" value="no" />
+    <label for="pick_189">No</label>
+
+    <p for="activity_64">Plan and organize an event<span>Events</span></p>
+    <input id="pick_190" type="radio" name="activity_64" value="yes" />
+    <label for="pick_190">Yes</label>
+    <input id="pick_191" type="radio" name="activity_64" value="maybe" />
+    <label for="pick_191">Maybe</label>
+    <input id="pick_192" type="radio" name="activity_64" value="no" />
+    <label for="pick_192">No</label>
+
+    <p for="activity_65">Host or facilitate an event<span>Events</span></p>
+    <input id="pick_193" type="radio" name="activity_65" value="yes" />
+    <label for="pick_193">Yes</label>
+    <input id="pick_194" type="radio" name="activity_65" value="maybe" />
+    <label for="pick_194">Maybe</label>
+    <input id="pick_195" type="radio" name="activity_65" value="no" />
+    <label for="pick_195">No</label>
+
+    <p for="activity_66">Greet people <span>Events</span></p>
+    <input id="pick_196" type="radio" name="activity_66" value="yes" />
+    <label for="pick_196">Yes</label>
+    <input id="pick_197" type="radio" name="activity_66" value="maybe" />
+    <label for="pick_197">Maybe</label>
+    <input id="pick_198" type="radio" name="activity_66" value="no" />
+    <label for="pick_198">No</label>
+
+    <p for="activity_67">Hand out food/refreshments<span>Events</span></p>
+    <input id="pick_199" type="radio" name="activity_67" value="yes" />
+    <label for="pick_199">Yes</label>
+    <input id="pick_200" type="radio" name="activity_67" value="maybe" />
+    <label for="pick_200">Maybe</label>
+    <input id="pick_201" type="radio" name="activity_67" value="no" />
+    <label for="pick_201">No</label>
+
+    <p for="activity_68">Help plan a fundraiser<span>Events</span></p>
+    <input id="pick_202" type="radio" name="activity_68" value="yes" />
+    <label for="pick_202">Yes</label>
+    <input id="pick_203" type="radio" name="activity_68" value="maybe" />
+    <label for="pick_203">Maybe</label>
+    <input id="pick_204" type="radio" name="activity_68" value="no" />
+    <label for="pick_204">No</label>
+
+    <p for="activity_69">Spread the word about an event<span>Events</span></p>
+    <input id="pick_205" type="radio" name="activity_69" value="yes" />
+    <label for="pick_205">Yes</label>
+    <input id="pick_206" type="radio" name="activity_69" value="maybe" />
+    <label for="pick_206">Maybe</label>
+    <input id="pick_207" type="radio" name="activity_69" value="no" />
+    <label for="pick_207">No</label>
+
+    <p for="activity_70">Take photographs or video events<span>Events</span></p>
+    <input id="pick_208" type="radio" name="activity_70" value="yes" />
+    <label for="pick_208">Yes</label>
+    <input id="pick_209" type="radio" name="activity_70" value="maybe" />
+    <label for="pick_209">Maybe</label>
+    <input id="pick_210" type="radio" name="activity_70" value="no" />
+    <label for="pick_210">No</label>
+
+    <p for="activity_71">Conduct an HR audit on policies and procedures <span>Legal & Human Resources</span></p>
+    <input id="pick_211" type="radio" name="activity_71" value="yes" />
+    <label for="pick_211">Yes</label>
+    <input id="pick_212" type="radio" name="activity_71" value="maybe" />
+    <label for="pick_212">Maybe</label>
+    <input id="pick_213" type="radio" name="activity_71" value="no" />
+    <label for="pick_213">No</label>
+
+    <p for="activity_72">Pro bono HR consultation <span>Legal & Human Resources</span></p>
+    <input id="pick_214" type="radio" name="activity_72" value="yes" />
+    <label for="pick_214">Yes</label>
+    <input id="pick_215" type="radio" name="activity_72" value="maybe" />
+    <label for="pick_215">Maybe</label>
+    <input id="pick_216" type="radio" name="activity_72" value="no" />
+    <label for="pick_216">No</label>
+
+    <p for="activity_73">Create HR management policies<span>Legal & Human Resources</span></p>
+    <input id="pick_217" type="radio" name="activity_73" value="yes" />
+    <label for="pick_217">Yes</label>
+    <input id="pick_218" type="radio" name="activity_73" value="maybe" />
+    <label for="pick_218">Maybe</label>
+    <input id="pick_219" type="radio" name="activity_73" value="no" />
+    <label for="pick_219">No</label>
+
+    <p for="activity_74">Pro bono legal assistance<span>Legal & Human Resources</span></p>
+    <input id="pick_220" type="radio" name="activity_74" value="yes" />
+    <label for="pick_220">Yes</label>
+    <input id="pick_221" type="radio" name="activity_74" value="maybe" />
+    <label for="pick_221">Maybe</label>
+    <input id="pick_222" type="radio" name="activity_74" value="no" />
+    <label for="pick_222">No</label>
+
+    <p for="activity_75">Serve as a board member <span>Legal & Human Resources</span></p>
+    <input id="pick_223" type="radio" name="activity_75" value="yes" />
+    <label for="pick_223">Yes</label>
+    <input id="pick_224" type="radio" name="activity_75" value="maybe" />
+    <label for="pick_224">Maybe</label>
+    <input id="pick_225" type="radio" name="activity_75" value="no" />
+    <label for="pick_225">No</label>
+
+    <p for="activity_76">Recruit and hire employees<span>Legal & Human Resources</span></p>
+    <input id="pick_226" type="radio" name="activity_76" value="yes" />
+    <label for="pick_226">Yes</label>
+    <input id="pick_227" type="radio" name="activity_76" value="maybe" />
+    <label for="pick_227">Maybe</label>
+    <input id="pick_228" type="radio" name="activity_76" value="no" />
+    <label for="pick_228">No</label>
+
+    <p for="activity_77">Conduct benefit analysis<span>Legal & Human Resources</span></p>
+    <input id="pick_229" type="radio" name="activity_77" value="yes" />
+    <label for="pick_229">Yes</label>
+    <input id="pick_230" type="radio" name="activity_77" value="maybe" />
+    <label for="pick_230">Maybe</label>
+    <input id="pick_231" type="radio" name="activity_77" value="no" />
+    <label for="pick_231">No</label>
+
+    <p for="activity_78">Create job descriptions <span>Legal & Human Resources</span></p>
+    <input id="pick_232" type="radio" name="activity_78" value="yes" />
+    <label for="pick_232">Yes</label>
+    <input id="pick_233" type="radio" name="activity_78" value="maybe" />
+    <label for="pick_233">Maybe</label>
+    <input id="pick_234" type="radio" name="activity_78" value="no" />
+    <label for="pick_234">No</label>
+
+    <p for="activity_79">Do practical tasks <span>Volunteer Management</span></p>
+    <input id="pick_235" type="radio" name="activity_79" value="yes" />
+    <label for="pick_235">Yes</label>
+    <input id="pick_236" type="radio" name="activity_79" value="maybe" />
+    <label for="pick_236">Maybe</label>
+    <input id="pick_237" type="radio" name="activity_79" value="no" />
+    <label for="pick_237">No</label>
+
+    <p for="activity_80">Organize tangibe items<span>Volunteer Management</span></p>
+    <input id="pick_238" type="radio" name="activity_80" value="yes" />
+    <label for="pick_238">Yes</label>
+    <input id="pick_239" type="radio" name="activity_80" value="maybe" />
+    <label for="pick_239">Maybe</label>
+    <input id="pick_240" type="radio" name="activity_80" value="no" />
+    <label for="pick_240">No</label>
+
+    <p for="activity_81">Execute strategy to reach out to volunteers<span>Volunteer Management</span></p>
+    <input id="pick_241" type="radio" name="activity_81" value="yes" />
+    <label for="pick_241">Yes</label>
+    <input id="pick_242" type="radio" name="activity_81" value="maybe" />
+    <label for="pick_242">Maybe</label>
+    <input id="pick_243" type="radio" name="activity_81" value="no" />
+    <label for="pick_243">No</label>
+
+    <p for="activity_82">Develop strategy for volunteer recruitment <span>Volunteer Management</span></p>
+    <input id="pick_244" type="radio" name="activity_82" value="yes" />
+    <label for="pick_244">Yes</label>
+    <input id="pick_245" type="radio" name="activity_82" value="maybe" />
+    <label for="pick_245">Maybe</label>
+    <input id="pick_246" type="radio" name="activity_82" value="no" />
+    <label for="pick_246">No</label>
+
+    <p for="activity_83">Organize an item drive<span>Volunteer Management</span></p>
+    <input id="pick_247" type="radio" name="activity_83" value="yes" />
+    <label for="pick_247">Yes</label>
+    <input id="pick_248" type="radio" name="activity_83" value="maybe" />
+    <label for="pick_248">Maybe</label>
+    <input id="pick_249" type="radio" name="activity_83" value="no" />
+    <label for="pick_249">No</label>
+
+    <p for="activity_84">Fill needs of an item drive<span>Volunteer Management</span></p>
+    <input id="pick_250" type="radio" name="activity_84" value="yes" />
+    <label for="pick_250">Yes</label>
+    <input id="pick_251" type="radio" name="activity_84" value="maybe" />
+    <label for="pick_251">Maybe</label>
+    <input id="pick_252" type="radio" name="activity_84" value="no" />
+    <label for="pick_252">No</label>
+
+    <p for="activity_85">Create volunteer handbook <span>Volunteer Management</span></p>
+    <input id="pick_253" type="radio" name="activity_85" value="yes" />
+    <label for="pick_253">Yes</label>
+    <input id="pick_254" type="radio" name="activity_85" value="maybe" />
+    <label for="pick_254">Maybe</label>
+    <input id="pick_255" type="radio" name="activity_85" value="no" />
+    <label for="pick_255">No</label>
+
+    <p for="activity_86">Make phone calls to volunteers<span>Volunteer Management</span></p>
+    <input id="pick_256" type="radio" name="activity_86" value="yes" />
+    <label for="pick_256">Yes</label>
+    <input id="pick_257" type="radio" name="activity_86" value="maybe" />
+    <label for="pick_257">Maybe</label>
+    <input id="pick_258" type="radio" name="activity_86" value="no" />
+    <label for="pick_258">No</label>
+
+    <p for="activity_87">Check in with volunteers / beneficiaries<span>Volunteer Management</span></p>
+    <input id="pick_259" type="radio" name="activity_87" value="yes" />
+    <label for="pick_259">Yes</label>
+    <input id="pick_260" type="radio" name="activity_87" value="maybe" />
+    <label for="pick_260">Maybe</label>
+    <input id="pick_261" type="radio" name="activity_87" value="no" />
+    <label for="pick_261">No</label>
+
+    <p for="activity_88">Track volunteers<span>Volunteer Management</span></p>
+    <input id="pick_262" type="radio" name="activity_88" value="yes" />
+    <label for="pick_262">Yes</label>
+    <input id="pick_263" type="radio" name="activity_88" value="maybe" />
+    <label for="pick_263">Maybe</label>
+    <input id="pick_264" type="radio" name="activity_88" value="no" />
+    <label for="pick_264">No</label>
+
+    <p for="activity_89">Schedule volunteers<span>Volunteer Management</span></p>
+    <input id="pick_265" type="radio" name="activity_89" value="yes" />
+    <label for="pick_265">Yes</label>
+    <input id="pick_266" type="radio" name="activity_89" value="maybe" />
+    <label for="pick_266">Maybe</label>
+    <input id="pick_267" type="radio" name="activity_89" value="no" />
+    <label for="pick_267">No</label>
+
+    <p for="activity_90">Write content for web or print material<span>External Communication</span></p>
+    <input id="pick_268" type="radio" name="activity_90" value="yes" />
+    <label for="pick_268">Yes</label>
+    <input id="pick_269" type="radio" name="activity_90" value="maybe" />
+    <label for="pick_269">Maybe</label>
+    <input id="pick_270" type="radio" name="activity_90" value="no" />
+    <label for="pick_270">No</label>
+
+    <p for="activity_91">Hang out with beneficiaries<span>External Communication</span></p>
+    <input id="pick_271" type="radio" name="activity_91" value="yes" />
+    <label for="pick_271">Yes</label>
+    <input id="pick_272" type="radio" name="activity_91" value="maybe" />
+    <label for="pick_272">Maybe</label>
+    <input id="pick_273" type="radio" name="activity_91" value="no" />
+    <label for="pick_273">No</label>
+
+    <p for="activity_92">Help organizations define their target audience and key messages <span>External Communication</span></p>
+    <input id="pick_274" type="radio" name="activity_92" value="yes" />
+    <label for="pick_274">Yes</label>
+    <input id="pick_275" type="radio" name="activity_92" value="maybe" />
+    <label for="pick_275">Maybe</label>
+    <input id="pick_276" type="radio" name="activity_92" value="no" />
+    <label for="pick_276">No</label>
+
+    <p for="activity_93">Create communications strategy<span>External Communication</span></p>
+    <input id="pick_277" type="radio" name="activity_93" value="yes" />
+    <label for="pick_277">Yes</label>
+    <input id="pick_278" type="radio" name="activity_93" value="maybe" />
+    <label for="pick_278">Maybe</label>
+    <input id="pick_279" type="radio" name="activity_93" value="no" />
+    <label for="pick_279">No</label>
+
+    <p for="activity_94">Make phone calls to volunteers and beneficiaries<span>External Communication</span></p>
+    <input id="pick_280" type="radio" name="activity_94" value="yes" />
+    <label for="pick_280">Yes</label>
+    <input id="pick_281" type="radio" name="activity_94" value="maybe" />
+    <label for="pick_281">Maybe</label>
+    <input id="pick_282" type="radio" name="activity_94" value="no" />
+    <label for="pick_282">No</label>
+
+    <p for="activity_95">Conduct a communications audit<span>External Communication</span></p>
+    <input id="pick_283" type="radio" name="activity_95" value="yes" />
+    <label for="pick_283">Yes</label>
+    <input id="pick_284" type="radio" name="activity_95" value="maybe" />
+    <label for="pick_284">Maybe</label>
+    <input id="pick_285" type="radio" name="activity_95" value="no" />
+    <label for="pick_285">No</label>
+
+    <p for="activity_96">Attend a focus group<span>External Communication</span></p>
+    <input id="pick_286" type="radio" name="activity_96" value="yes" />
+    <label for="pick_286">Yes</label>
+    <input id="pick_287" type="radio" name="activity_96" value="maybe" />
+    <label for="pick_287">Maybe</label>
+    <input id="pick_288" type="radio" name="activity_96" value="no" />
+    <label for="pick_288">No</label>
+
+    <p for="activity_97">Take notes in meetings<span>External Communication</span></p>
+    <input id="pick_289" type="radio" name="activity_97" value="yes" />
+    <label for="pick_289">Yes</label>
+    <input id="pick_290" type="radio" name="activity_97" value="maybe" />
+    <label for="pick_290">Maybe</label>
+    <input id="pick_291" type="radio" name="activity_97" value="no" />
+    <label for="pick_291">No</label>
+
+    <p for="activity_98">User-critique on website or print material<span>External Communication</span></p>
+    <input id="pick_292" type="radio" name="activity_98" value="yes" />
+    <label for="pick_292">Yes</label>
+    <input id="pick_293" type="radio" name="activity_98" value="maybe" />
+    <label for="pick_293">Maybe</label>
+    <input id="pick_294" type="radio" name="activity_98" value="no" />
+    <label for="pick_294">No</label>
+
+    <p for="activity_99">Proof-read & edit <span>External Communication</span></p>
+    <input id="pick_295" type="radio" name="activity_99" value="yes" />
+    <label for="pick_295">Yes</label>
+    <input id="pick_296" type="radio" name="activity_99" value="maybe" />
+    <label for="pick_296">Maybe</label>
+    <input id="pick_297" type="radio" name="activity_99" value="no" />
+    <label for="pick_297">No</label>
+
+    <p for="activity_100">Outline content for brochures and information pieces <span>External Communication</span></p>
+    <input id="pick_298" type="radio" name="activity_100" value="yes" />
+    <label for="pick_298">Yes</label>
+    <input id="pick_299" type="radio" name="activity_100" value="maybe" />
+    <label for="pick_299">Maybe</label>
+    <input id="pick_300" type="radio" name="activity_100" value="no" />
+    <label for="pick_300">No</label>
+
+    <p for="activity_101">Create digital presentations <span>External Communication</span></p>
+    <input id="pick_301" type="radio" name="activity_101" value="yes" />
+    <label for="pick_301">Yes</label>
+    <input id="pick_302" type="radio" name="activity_101" value="maybe" />
+    <label for="pick_302">Maybe</label>
+    <input id="pick_303" type="radio" name="activity_101" value="no" />
+    <label for="pick_303">No</label>
+
+    <p for="activity_102">Create or manage graphics (logo/graphic design) <span>External Communication</span></p>
+    <input id="pick_304" type="radio" name="activity_102" value="yes" />
+    <label for="pick_304">Yes</label>
+    <input id="pick_305" type="radio" name="activity_102" value="maybe" />
+    <label for="pick_305">Maybe</label>
+    <input id="pick_306" type="radio" name="activity_102" value="no" />
+    <label for="pick_306">No</label>
+
+    <input type="hidden" name="activity_tries" id="activity_tries" value="1" />
+
+    <button type="button">Next →</button>
+
+  </fieldset>
+
+  <fieldset id="activity_rank">
+    <legend>Choose and rank your top five by selecting them</legend>
+
+    <p id="activityrank_selection_1">#1</p>
+
+    <input id="arank_1" type="radio" name="rank_activity_1" value="a"><label for="arank_1">a</label>
+    <input id="arank_2" type="radio" name="rank_activity_1" value="a"><label for="arank_2">a</label>
+    <input id="arank_3" type="radio" name="rank_activity_1" value="a"><label for="arank_3">a</label>
+    <input id="arank_4" type="radio" name="rank_activity_1" value="a"><label for="arank_4">a</label>
+    <input id="arank_5" type="radio" name="rank_activity_1" value="a"><label for="arank_5">a</label>
+    <input id="arank_6" type="radio" name="rank_activity_1" value="a"><label for="arank_6">a</label>
+    <input id="arank_7" type="radio" name="rank_activity_1" value="a"><label for="arank_7">a</label>
+    <input id="arank_8" type="radio" name="rank_activity_1" value="a"><label for="arank_8">a</label>
+    <input id="arank_9" type="radio" name="rank_activity_1" value="a"><label for="arank_9">a</label>
+    <input id="arank_10" type="radio" name="rank_activity_1" value="a"><label for="arank_10">a</label>
+    <input id="arank_11" type="radio" name="rank_activity_1" value="a"><label for="arank_11">a</label>
+    <input id="arank_12" type="radio" name="rank_activity_1" value="a"><label for="arank_12">a</label>
+
+    <p id="activityrank_selection_2">#2</p>
+
+    <input id="arank_13" type="radio" name="rank_activity_2" value="a"><label for="arank_13">a</label>
+    <input id="arank_14" type="radio" name="rank_activity_2" value="a"><label for="arank_14">a</label>
+    <input id="arank_15" type="radio" name="rank_activity_2" value="a"><label for="arank_15">a</label>
+    <input id="arank_16" type="radio" name="rank_activity_2" value="a"><label for="arank_16">a</label>
+    <input id="arank_17" type="radio" name="rank_activity_2" value="a"><label for="arank_17">a</label>
+    <input id="arank_18" type="radio" name="rank_activity_2" value="a"><label for="arank_18">a</label>
+    <input id="arank_19" type="radio" name="rank_activity_2" value="a"><label for="arank_19">a</label>
+    <input id="arank_20" type="radio" name="rank_activity_2" value="a"><label for="arank_20">a</label>
+    <input id="arank_21" type="radio" name="rank_activity_2" value="a"><label for="arank_21">a</label>
+    <input id="arank_22" type="radio" name="rank_activity_2" value="a"><label for="arank_22">a</label>
+    <input id="arank_23" type="radio" name="rank_activity_2" value="a"><label for="arank_23">a</label>
+    <input id="arank_24" type="radio" name="rank_activity_2" value="a"><label for="arank_24">a</label>
+
+    <p id="activityrank_selection_3">#3</p>
+
+    <input id="arank_25" type="radio" name="rank_activity_3" value="a"><label for="arank_25">a</label>
+    <input id="arank_26" type="radio" name="rank_activity_3" value="a"><label for="arank_26">a</label>
+    <input id="arank_27" type="radio" name="rank_activity_3" value="a"><label for="arank_27">a</label>
+    <input id="arank_28" type="radio" name="rank_activity_3" value="a"><label for="arank_28">a</label>
+    <input id="arank_29" type="radio" name="rank_activity_3" value="a"><label for="arank_29">a</label>
+    <input id="arank_30" type="radio" name="rank_activity_3" value="a"><label for="arank_30">a</label>
+    <input id="arank_31" type="radio" name="rank_activity_3" value="a"><label for="arank_31">a</label>
+    <input id="arank_32" type="radio" name="rank_activity_3" value="a"><label for="arank_32">a</label>
+    <input id="arank_33" type="radio" name="rank_activity_3" value="a"><label for="arank_33">a</label>
+    <input id="arank_34" type="radio" name="rank_activity_3" value="a"><label for="arank_34">a</label>
+    <input id="arank_35" type="radio" name="rank_activity_3" value="a"><label for="arank_35">a</label>
+    <input id="arank_36" type="radio" name="rank_activity_3" value="a"><label for="arank_36">a</label>
+
+    <p id="activityrank_selection_4">#4</p>
+
+    <input id="arank_37" type="radio" name="rank_activity_4" value="a"><label for="arank_37">a</label>
+    <input id="arank_38" type="radio" name="rank_activity_4" value="a"><label for="arank_38">a</label>
+    <input id="arank_39" type="radio" name="rank_activity_4" value="a"><label for="arank_39">a</label>
+    <input id="arank_40" type="radio" name="rank_activity_4" value="a"><label for="arank_40">a</label>
+    <input id="arank_41" type="radio" name="rank_activity_4" value="a"><label for="arank_41">a</label>
+    <input id="arank_42" type="radio" name="rank_activity_4" value="a"><label for="arank_42">a</label>
+    <input id="arank_43" type="radio" name="rank_activity_4" value="a"><label for="arank_43">a</label>
+    <input id="arank_44" type="radio" name="rank_activity_4" value="a"><label for="arank_44">a</label>
+    <input id="arank_45" type="radio" name="rank_activity_4" value="a"><label for="arank_45">a</label>
+    <input id="arank_46" type="radio" name="rank_activity_4" value="a"><label for="arank_46">a</label>
+    <input id="arank_47" type="radio" name="rank_activity_4" value="a"><label for="arank_47">a</label>
+    <input id="arank_48" type="radio" name="rank_activity_4" value="a"><label for="arank_48">a</label>
+
+    <p id="activityrank_selection_5">#5</p>
+
+    <input id="arank_49" type="radio" name="rank_activity_5" value="a"><label for="arank_49">a</label>
+    <input id="arank_50" type="radio" name="rank_activity_5" value="a"><label for="arank_50">a</label>
+    <input id="arank_51" type="radio" name="rank_activity_5" value="a"><label for="arank_51">a</label>
+    <input id="arank_52" type="radio" name="rank_activity_5" value="a"><label for="arank_52">a</label>
+    <input id="arank_53" type="radio" name="rank_activity_5" value="a"><label for="arank_53">a</label>
+    <input id="arank_54" type="radio" name="rank_activity_5" value="a"><label for="arank_54">a</label>
+    <input id="arank_55" type="radio" name="rank_activity_5" value="a"><label for="arank_55">a</label>
+    <input id="arank_56" type="radio" name="rank_activity_5" value="a"><label for="arank_56">a</label>
+    <input id="arank_57" type="radio" name="rank_activity_5" value="a"><label for="arank_57">a</label>
+    <input id="arank_58" type="radio" name="rank_activity_5" value="a"><label for="arank_58">a</label>
+    <input id="arank_59" type="radio" name="rank_activity_5" value="a"><label for="arank_59">a</label>
+    <input id="arank_60" type="radio" name="rank_activity_5" value="a"><label for="arank_60">a</label>
+
+    <button type="submit">Submit</button>
+
+  </fieldset>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,644 @@
+@charset "UTF-8";
+:root {
+  --bg-color: #0f3344;
+  --fg-color: #81a8e2;
+  --input: #0b2633;
+  --button: #80c7a2;
+  --card: #ffeecd;
+  --grey: #666666;
+  --red: #dc4311;
+  --orange: #feab21;
+  --green: #6fbe90;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+legend {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+fieldset {
+  position: relative;
+  display: block;
+  min-height: 100vh;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+input[type=text],
+input[type=email],
+button {
+  display: block;
+  width: 13em;
+  background-color: var(--input);
+  border: 2px solid var(--fg-color);
+  padding: 0.5em 1em;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 0.5em;
+  outline: none;
+  margin: 0 auto;
+}
+input[type=text]:active, input[type=text]:focus,
+input[type=email]:active,
+input[type=email]:focus,
+button:active,
+button:focus {
+  border-color: white;
+}
+
+label {
+  width: 12em;
+}
+
+label,
+button {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  padding: 0.5em 1em;
+}
+
+button {
+  display: block;
+  border-color: var(--button);
+  color: var(--button);
+  padding: 1.2em 2em;
+  margin: 1em auto;
+  width: auto;
+}
+button:hover {
+  cursor: pointer;
+  background: var(--button);
+  color: var(--input);
+}
+button:active {
+  color: white;
+}
+
+#select_social {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(15rem, 1fr) minmax(15rem, 1fr) minmax(15rem, 1fr);
+  grid-gap: 1rem;
+}
+#select_social legend {
+  padding-top: 2rem;
+  grid-column: 1/span 3;
+  grid-row: 1;
+}
+#select_social input {
+  display: none;
+}
+#select_social label {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 13rem;
+  height: 7.5rem;
+  background: var(--card);
+  color: black;
+  box-shadow: 0 0 1px black;
+  border-radius: 0.5rem;
+  background-size: 120%;
+  background-position: center center;
+  margin: 0;
+  transition: all 0.15s ease;
+}
+#select_social label:nth-of-type(1) {
+  transform: rotate(-2deg);
+}
+#select_social label:nth-of-type(2) {
+  transform: rotate(1deg);
+}
+#select_social label:nth-of-type(3) {
+  transform: rotate(3deg);
+}
+#select_social label:nth-of-type(4) {
+  transform: rotate(1deg);
+}
+#select_social label:nth-of-type(5) {
+  transform: rotate(-1deg);
+}
+#select_social label:nth-of-type(6) {
+  transform: rotate(-2deg);
+}
+#select_social label:nth-of-type(7) {
+  transform: rotate(-2deg);
+}
+#select_social label:nth-of-type(8) {
+  transform: rotate(1deg);
+}
+#select_social label:nth-of-type(9) {
+  transform: rotate(3deg);
+}
+#select_social label:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#select_social input[type=checkbox]:checked + label {
+  background: var(--button);
+  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero' opacity='.1'%3E%3Cpath d='M36 .5a35.5 35.5 0 100 71 35.5 35.5 0 000-71zm0 65a29.5 29.5 0 110-59 29.5 29.5 0 010 59z'/%3E%3Cpath d='M48.9 23.9L30.3 42.5l-7.2-7.2a2.9 2.9 0 00-4.2 0 2.9 2.9 0 000 4.2l9.3 9.3a3 3 0 002.1.9 3 3 0 002.1-.9l20.7-20.7a2.9 2.9 0 000-4.2 2.9 2.9 0 00-4.2 0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+#select_social .progress {
+  margin-top: 1rem;
+  grid-column: 2;
+  grid-row: 5;
+  display: block;
+  border: 1px solid var(--fg-color);
+  border-radius: 100%;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+#select_social .progress#one {
+  margin-left: -7em;
+}
+#select_social .progress#three {
+  margin-right: -7em;
+}
+#select_social .progress.on {
+  background-color: var(--button);
+  border-color: var(--button);
+  color: white;
+}
+#select_social button {
+  grid-column: 2;
+}
+
+#rank_social {
+  text-align: center;
+}
+#rank_social legend {
+  padding-top: 2rem;
+  grid-column: 1/span 3;
+  grid-row: 1;
+}
+#rank_social input[type=radio] {
+  display: none;
+}
+#rank_social p {
+  position: absolute;
+  top: 10vh;
+  background: var(--input);
+  border: 1px dashed var(--fg-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 15rem;
+  height: 7rem;
+  font-family: "Merriweather", Serif;
+  line-height: 7rem;
+  z-index: -1;
+}
+#rank_social p#rank_selection_1 {
+  left: 20%;
+  margin-left: -8.5rem;
+}
+#rank_social p#rank_selection_2 {
+  left: 50%;
+  margin-left: -8.5rem;
+}
+#rank_social p#rank_selection_3 {
+  left: 80%;
+  margin-left: -8.5rem;
+}
+#rank_social label {
+  display: grid;
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 13rem;
+  height: 7.5rem;
+  background: #ffeecd;
+  color: black;
+  border-radius: 0.5rem;
+  grid-row: 3;
+  background: var(--button);
+  background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000' fill-rule='nonzero' opacity='.1'%3E%3Cpath d='M36 .5a35.5 35.5 0 100 71 35.5 35.5 0 000-71zm0 65a29.5 29.5 0 110-59 29.5 29.5 0 010 59z'/%3E%3Cpath d='M48.9 23.9L30.3 42.5l-7.2-7.2a2.9 2.9 0 00-4.2 0 2.9 2.9 0 000 4.2l9.3 9.3a3 3 0 002.1.9 3 3 0 002.1-.9l20.7-20.7a2.9 2.9 0 000-4.2 2.9 2.9 0 00-4.2 0z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  transition: all 0.15s ease;
+}
+#rank_social label:nth-of-type(1), #rank_social label:nth-of-type(4), #rank_social label:nth-of-type(7) {
+  transform: rotate(-2deg);
+  left: 20%;
+  margin-left: -7.5rem;
+}
+#rank_social label:nth-of-type(2), #rank_social label:nth-of-type(5), #rank_social label:nth-of-type(8) {
+  transform: rotate(1deg);
+  left: 50%;
+  margin-left: -7.5rem;
+}
+#rank_social label:nth-of-type(3), #rank_social label:nth-of-type(6), #rank_social label:nth-of-type(9) {
+  transform: rotate(3deg);
+  left: 80%;
+  margin-left: -7.5rem;
+}
+#rank_social label:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#rank_social input[name=rank_social_1]:checked + label {
+  position: absolute;
+  left: 20%;
+  top: 10vh;
+  margin-top: 2rem;
+}
+#rank_social input[name=rank_social_2]:checked + label {
+  position: absolute;
+  left: 50%;
+  margin-left: -7.5rem;
+  top: 10vh;
+  margin-top: 2rem;
+}
+#rank_social input[name=rank_social_3]:checked + label {
+  position: absolute;
+  left: 80%;
+  margin-left: -7.5rem;
+  top: 10vh;
+  margin-top: 2rem;
+}
+#rank_social button {
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+  margin-left: -5rem;
+}
+
+#activity_select {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#activity_select legend {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+}
+#activity_select input {
+  display: none;
+}
+#activity_select h3 span {
+  display: none;
+}
+#activity_select h3 em {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+#activity_select h3 em:nth-of-type(1) {
+  left: auto;
+  right: 0;
+  width: 10rem;
+  line-height: 100vh;
+  text-align: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='76' height='260' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M75.8 0a149.9 149.9 0 000 259.8z' fill='%230B1D27' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+  color: var(--green);
+}
+#activity_select h3 em:nth-of-type(2) {
+  right: auto;
+  left: 0;
+  width: 10rem;
+  line-height: 100vh;
+  text-align: center;
+  background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='76' height='260' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.8 0a149.9 149.9 0 010 259.8z' fill='%230B1D27' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  color: var(--red);
+}
+#activity_select h3 em:nth-of-type(3) {
+  text-align: center;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  bottom: auto;
+  line-height: 6rem;
+  color: var(--orange);
+  background-image: url("data:image/svg+xml,%3Csvg width='261' height='76' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.5.4a149.9 149.9 0 00259.7 0z' fill='%230B1D27' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+#activity_select p {
+  display: block;
+  background: var(--card);
+  width: 13rem;
+  height: 16rem;
+  position: absolute;
+  top: 20vh;
+  left: 50vw;
+  margin-left: -7.5rem;
+  padding: 2em 0.5rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: black;
+  transform: rotate(-1deg);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.01);
+  transition: all 0.3s ease;
+  font-family: "Merriweather", serif;
+  z-index: 1;
+  transform: translateZ(0);
+}
+#activity_select p:nth-of-type(2) {
+  transform: rotate(1.5deg);
+}
+#activity_select p:nth-of-type(3) {
+  transform: rotate(-3deg);
+}
+#activity_select p.no {
+  left: 0%;
+  margin-left: -10rem;
+}
+#activity_select p.yes {
+  left: 100%;
+  right: 0;
+  margin-left: -3rem;
+}
+#activity_select p.maybe {
+  top: -13rem;
+}
+#activity_select p span {
+  font-family: "Montserrat", serif;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  width: 100%;
+  font-size: 70%;
+  color: var(--grey);
+}
+#activity_select label {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50vh;
+  margin-top: 6rem;
+  margin-left: -4rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 6.5rem;
+  text-align: center;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  background: var(--input);
+  border-radius: 1rem;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.01);
+  z-index: 2;
+}
+#activity_select label:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#activity_select label:before {
+  content: "⬆";
+  position: absolute;
+  left: 3.1rem;
+  top: -1.2rem;
+}
+#activity_select input[value=yes] + label {
+  margin-left: 5rem;
+  border-color: var(--green);
+  color: var(--green);
+}
+#activity_select input[value=yes] + label:before {
+  transform: rotate(90deg);
+}
+#activity_select input[value=no] + label {
+  margin-left: -13rem;
+  border-color: var(--red);
+  color: var(--red);
+}
+#activity_select input[value=no] + label:before {
+  transform: rotate(-90deg);
+}
+#activity_select button {
+  z-index: 0;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  margin-top: -2rem;
+  margin-left: -5rem;
+}
+
+#activity_rank {
+  text-align: center;
+}
+#activity_rank legend {
+  padding-top: 2rem;
+  grid-column: 1/span 3;
+  grid-row: 1;
+}
+#activity_rank input[type=radio] {
+  display: none;
+}
+#activity_rank p {
+  position: absolute;
+  top: 4vh;
+  background: var(--input);
+  border: 1px dashed var(--fg-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 8rem;
+  height: 11rem;
+  line-height: 11rem;
+  z-index: -1;
+  margin-left: -5rem;
+  font-family: "Merriweather", Serif;
+  transform: translateZ(0);
+}
+#activity_rank p#activityrank_selection_1 {
+  left: 10%;
+}
+#activity_rank p#activityrank_selection_2 {
+  left: 30%;
+}
+#activity_rank p#activityrank_selection_3 {
+  left: 50%;
+}
+#activity_rank p#activityrank_selection_4 {
+  left: 70%;
+}
+#activity_rank p#activityrank_selection_5 {
+  left: 90%;
+}
+#activity_rank label {
+  display: grid;
+  position: absolute;
+  margin: 0;
+  margin-left: -7rem;
+  left: 50%;
+  top: 40vh;
+  width: 7rem;
+  height: 10rem;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  background: var(--card);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.01);
+  transition: all 0.15s ease;
+  font-family: "Merriweather", serif;
+}
+#activity_rank label span {
+  font-family: "Montserrat", serif;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  width: 100%;
+  font-size: 70%;
+  color: var(--grey);
+}
+#activity_rank label[for=arank_1], #activity_rank label[for=arank_13], #activity_rank label[for=arank_25], #activity_rank label[for=arank_37], #activity_rank label[for=arank_49] {
+  transform: rotate(-2deg);
+  left: 16%;
+}
+#activity_rank label[for=arank_2], #activity_rank label[for=arank_14], #activity_rank label[for=arank_26], #activity_rank label[for=arank_38], #activity_rank label[for=arank_50] {
+  transform: rotate(1deg);
+  left: 32%;
+}
+#activity_rank label[for=arank_3], #activity_rank label[for=arank_15], #activity_rank label[for=arank_27], #activity_rank label[for=arank_39], #activity_rank label[for=arank_51] {
+  transform: rotate(3deg);
+  left: 48%;
+}
+#activity_rank label[for=arank_4], #activity_rank label[for=arank_16], #activity_rank label[for=arank_28], #activity_rank label[for=arank_40], #activity_rank label[for=arank_52] {
+  transform: rotate(1deg);
+  left: 64%;
+}
+#activity_rank label[for=arank_5], #activity_rank label[for=arank_17], #activity_rank label[for=arank_29], #activity_rank label[for=arank_41], #activity_rank label[for=arank_53] {
+  transform: rotate(-2deg);
+  left: 80%;
+}
+#activity_rank label[for=arank_6], #activity_rank label[for=arank_18], #activity_rank label[for=arank_30], #activity_rank label[for=arank_42], #activity_rank label[for=arank_54] {
+  transform: rotate(1.5deg);
+  left: 96%;
+}
+#activity_rank label[for=arank_7], #activity_rank label[for=arank_19], #activity_rank label[for=arank_31], #activity_rank label[for=arank_43], #activity_rank label[for=arank_55] {
+  transform: rotate(-2deg);
+  left: 16%;
+  top: 65vh;
+}
+#activity_rank label[for=arank_8], #activity_rank label[for=arank_20], #activity_rank label[for=arank_32], #activity_rank label[for=arank_44], #activity_rank label[for=arank_56] {
+  transform: rotate(1deg);
+  left: 32%;
+  top: 65vh;
+}
+#activity_rank label[for=arank_9], #activity_rank label[for=arank_21], #activity_rank label[for=arank_33], #activity_rank label[for=arank_45], #activity_rank label[for=arank_57] {
+  transform: rotate(3deg);
+  left: 48%;
+  top: 65vh;
+}
+#activity_rank label[for=arank_10], #activity_rank label[for=arank_22], #activity_rank label[for=arank_34], #activity_rank label[for=arank_46], #activity_rank label[for=arank_58] {
+  transform: rotate(1deg);
+  left: 64%;
+  top: 65vh;
+}
+#activity_rank label[for=arank_11], #activity_rank label[for=arank_23], #activity_rank label[for=arank_35], #activity_rank label[for=arank_47], #activity_rank label[for=arank_59] {
+  transform: rotate(-2deg);
+  left: 80%;
+  top: 65vh;
+}
+#activity_rank label[for=arank_12], #activity_rank label[for=arank_24], #activity_rank label[for=arank_36], #activity_rank label[for=arank_48], #activity_rank label[for=arank_60] {
+  transform: rotate(1.5deg);
+  left: 96%;
+  top: 65vh;
+}
+#activity_rank label:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#activity_rank input[name=rank_activity_1] + label {
+  z-index: 5;
+}
+#activity_rank input[name=rank_activity_2] + label {
+  z-index: 4;
+}
+#activity_rank input[name=rank_activity_3] + label {
+  z-index: 3;
+}
+#activity_rank input[name=rank_activity_4] + label {
+  z-index: 2;
+}
+#activity_rank input[name=rank_activity_5] + label {
+  z-index: 1;
+}
+#activity_rank input[name=rank_activity_1]:checked + label {
+  left: 10%;
+  top: 9vh;
+  margin-left: -4.5rem;
+  transition: all 0.3s ease;
+}
+#activity_rank input[name=rank_activity_2]:checked + label {
+  position: absolute;
+  left: 30%;
+  top: 9vh;
+  margin-left: -4.5rem;
+  transition: all 0.3s ease;
+}
+#activity_rank input[name=rank_activity_3]:checked + label {
+  position: absolute;
+  left: 50%;
+  top: 9vh;
+  margin-left: -4.5rem;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+}
+#activity_rank input[name=rank_activity_4]:checked + label {
+  left: 70%;
+  top: 9vh;
+  margin-left: -4.5rem;
+  transition: all 0.3s ease;
+}
+#activity_rank input[name=rank_activity_5]:checked + label {
+  left: 90%;
+  top: 9vh;
+  margin-left: -4.5rem;
+  transform: rotate(-3deg);
+  transition: all 0.3s ease;
+}
+#activity_rank button {
+  display: none;
+  position: absolute;
+  top: 75vh;
+  left: 50%;
+  margin-left: -5rem;
+}
